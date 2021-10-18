@@ -19,7 +19,7 @@ import (
 	"time"
 
 	"github.com/confluentinc/confluent-kafka-go/kafka"
-	"go.opentelemetry.io/contrib/instrumentation/github.com/confluentinc/confluent-kafka-go/otelconfluent/internal"
+	"github.com/eko/opentelemetry-go-contrib/instrumentation/github.com/confluentinc/confluent-kafka-go/otelconfluent/internal"
 
 	"go.opentelemetry.io/contrib"
 	"go.opentelemetry.io/otel"
