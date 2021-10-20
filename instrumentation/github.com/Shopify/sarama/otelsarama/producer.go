@@ -254,6 +254,7 @@ func startProducerSpan(cfg config, version sarama.KafkaVersion, msg *sarama.Prod
 	// Create a span.
 	attrs := []attribute.KeyValue{
 		semconv.MessagingSystemKey.String("kafka"),
+		semconv.MessagingOperationProcess,
 		semconv.MessagingDestinationKindTopic,
 		semconv.MessagingDestinationKey.String(msg.Topic),
 	}
